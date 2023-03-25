@@ -12,9 +12,10 @@ public class Blatt1 {
 
     public static void main(String[] args) {
         System.out.println("Hello!");
+        testie();
     }
     
-    public void testie(){
-        
+    public static void testie(){
+        System.out.println("testie");
     }
 }
