@@ -6,7 +6,7 @@ package com.mycompany.blatt1;
 
 /**
  *
- * @author usach
+ * @author Anastasiia Usacheva
  */
 public class Blatt1 {
 
