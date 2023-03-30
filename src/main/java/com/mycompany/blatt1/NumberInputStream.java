@@ -1,4 +1,3 @@
-
 package com.mycompany.blatt1;
 
 import java.io.FileInputStream;
@@ -37,12 +36,16 @@ public class NumberInputStream extends InputStream {
     
     @Override
     public int read() throws NumberToLargeException {
-        //in einen String die einzelnen ziffern schreiben, bis Leerezeichen auftritt (ASCII: 32)
-        //String in int parsen: Integer.valueOf(String name);
-        int zahl = 0;
-        //char[] buf = new char[1];
-        //int count = InputStream.read(buf, 0, 1);
-        return zahl;
+        try {
+            int number;
+            //array list nehmen und da die chars einspeichern
+            // brauche ich nicht: byte[] b = new byte[1];
+            int zahl = read(b, 0, 1);
+            //wenn er eine leerzeichen liest, dann muss der den char array list als string auswerten und ausgeben
+        } catch (IOException ex) {
+            Logger.getLogger(NumberInputStream.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
     
     
